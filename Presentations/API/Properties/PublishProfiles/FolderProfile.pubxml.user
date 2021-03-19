@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\ARTI1_\Source\Repos\Project\API\bin\Release\net5.0\publish\</_PublishTargetUrl>
+    <History>True|2021-03-18T15:20:52.2295274Z;False|2021-03-18T18:20:37.9415558+03:00;True|2021-03-18T18:15:18.2695950+03:00;True|2021-03-18T18:15:00.5968569+03:00;False|2021-03-18T18:14:45.1240319+03:00;True|2021-03-18T18:12:04.3918658+03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=.%3bDatabase=Rentacar%3bTrusted_Connection=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
