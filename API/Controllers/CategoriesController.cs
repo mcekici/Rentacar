@@ -1,6 +1,5 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,35 +10,35 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandsController : ControllerBase
+    public class CategoriesController : Controller
     {
-        IBrandService _brandService;
+        ICategoryService _categoryService;
 
-        public BrandsController(IBrandService brandService)
+        public CategoriesController(ICategoryService categoryService)
         {
-            _brandService = brandService;
+            _categoryService = categoryService;
         }
 
         [HttpGet("getall")]
-        public IActionResult GetBrandList()
+        public IActionResult GetCategoryList()
         {
-            var brands = _brandService.GetAll();
-            return Ok(brands);
+            var categories = _categoryService.GetAll();
+            return Ok(categories);
         }
 
 
         [HttpGet("get")]
-        public IActionResult GetBrandById(int brandId)
+        public IActionResult GetCategoryById(int categoryId)
         {
-            var brand = _brandService.GetById(brandId);
-            return Ok(brand);
+            var category = _categoryService.GetById(categoryId);
+            return Ok(category);
         }
 
 
         [HttpPost("add")]
-        public IActionResult AddBrand(Brand brand)
+        public IActionResult AddCategory(Category category)
         {
-            var result = _brandService.Add(brand);
+            var result = _categoryService.Add(category);
             if (result.Success)
             {
                 return Ok(result.Message);
@@ -49,9 +48,9 @@ namespace API.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult UpdateBrand(Brand brand)
+        public IActionResult UpdateCategory(Category category)
         {
-            var result = _brandService.Update(brand);
+            var result = _categoryService.Update(category);
             if (result.Success)
             {
                 return Ok(result.Message);
@@ -62,9 +61,9 @@ namespace API.Controllers
 
 
         [HttpPost("delete")]
-        public IActionResult DeleteBrand(Brand brand)
+        public IActionResult DeleteCategory(Category category)
         {
-            var result = _brandService.Delete(brand);
+            var result = _categoryService.Delete(category);
             if (result.Success)
             {
                 return Ok(result.Message);

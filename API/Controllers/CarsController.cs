@@ -20,19 +20,31 @@ namespace API.Controllers
             _carService = carService;
         }
 
-        [HttpGet("getlist")]
-        public IActionResult GetCarList()
+        [HttpGet("getalldto")]
+        public IActionResult GetAllDto()
         {
-            var cars = _carService.GetCarDetails();
+            var cars = _carService.GetAllDto();
             return Ok(cars);
         }
 
 
-        [HttpGet("get")]
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var cars = _carService.GetAll();
+            return Ok(cars);
+        }
+
+        [HttpGet("getdto")]
         public IActionResult GetCarById(int carId)
         {
-            var car = _carService.GetById(carId);
-            return Ok(car);
+            return Ok(_carService.GetDto(carId));
+        }
+
+        [HttpGet("get")]
+        public IActionResult Get(int carId)
+        {
+            return Ok(_carService.Get(carId));
         }
 
 

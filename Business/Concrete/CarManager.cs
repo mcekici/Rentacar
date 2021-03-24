@@ -22,21 +22,47 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
+        IDataResult<List<CarDto>> ICarService.GetAllDto()
+        {
+            var dtos = _carDal.GetAllDto();
+            return new SuccessDataResult<List<CarDto>>(dtos);
+        }
+
+        public IDataResult<List<Car>> GetAll()
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll());
+        }
+
+        public IDataResult<CarDto> GetDto(int carId)
+        {
+            return new SuccessDataResult<CarDto>(_carDal.GetDto(carId));
+        }
+
+
+        public IDataResult<Car> Get(int carId)
+        {
+            return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == carId));
+        }
+
         public IResult Add(Car car)
         {
             _carDal.Add(car);
             return new SuccessResult(Messages.CarAdded);
         }
 
-        public IDataResult<List<Car>> GetAll()
+        public IResult Update(Car car)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll().ToList());
+            _carDal.Update(car);
+            return new SuccessResult(Messages.CarUpdated);
         }
 
-        public IDataResult<Car> GetById(int carId)
+        public IResult Delete(Car car)
         {
-            return new SuccessDataResult<Car>(_carDal.Get(c=> c.Id == carId));
+            _carDal.Delete(car);
+            return new SuccessResult(Messages.CarDeleted);
         }
+
+        
 
         public IDataResult<List<Car>> GetByUnitPrice(decimal min, decimal max)
         {
@@ -51,23 +77,6 @@ namespace Business.Concrete
         public IDataResult<List<Car>> GetCarsByColorId(int colorId)
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ColorId == colorId));
-        }
-
-        public IDataResult<List<CarDetailDto>> GetCarDetails()
-        {
-            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails());
-        }
-
-        public IResult Update(Car car)
-        {
-            _carDal.Update(car);
-            return new SuccessResult(Messages.CarUpdated);
-        }
-
-        public IResult Delete(Car car)
-        {
-            _carDal.Delete(car);
-            return new SuccessResult(Messages.CarDeleted);
         }
     }
 }

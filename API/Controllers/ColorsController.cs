@@ -20,7 +20,7 @@ namespace API.Controllers
             _colorService = colorService;
         }
 
-        [HttpGet("getlist")]
+        [HttpGet("getall")]
         public IActionResult GetColorList()
         {
             var colors = _colorService.GetAll();
