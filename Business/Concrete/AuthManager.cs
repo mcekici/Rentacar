@@ -12,11 +12,13 @@ namespace Business.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
+        private IAdminService _adminService;
 
-        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper, IAdminService adminService)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
+            _adminService = adminService;
         }
 
         public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
@@ -66,6 +68,17 @@ namespace Business.Concrete
             var claims = _userService.GetClaims(user);
             var accessToken = _tokenHelper.CreateToken(user, claims);
             return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
+        }
+
+        public IDataResult<Admin> AdminLogin(Admin admin)
+        {
+            var a = _adminService.Get(admin);
+            if (a == null)
+            {
+                return new ErrorDataResult<Admin>("bulunamadı");
+            }
+
+            return new SuccessDataResult<Admin>(a);
         }
     }
 }
