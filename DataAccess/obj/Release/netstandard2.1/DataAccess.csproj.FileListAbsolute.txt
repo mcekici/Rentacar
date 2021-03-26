@@ -54,3 +54,17 @@ C:\Users\ARTI1_\Desktop\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAcces
 C:\Users\ARTI1_\Desktop\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.csproj.CopyComplete
 C:\Users\ARTI1_\Desktop\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.dll
 C:\Users\ARTI1_\Desktop\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\DataAccess.deps.json
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\DataAccess.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\DataAccess.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\Core.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\Entities.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\Core.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\bin\Release\netstandard2.1\Entities.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.AssemblyInfo.cs
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.csproj.CopyComplete
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\DataAccess\obj\Release\netstandard2.1\DataAccess.pdb

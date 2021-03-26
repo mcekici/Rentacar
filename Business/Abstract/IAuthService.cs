@@ -9,10 +9,7 @@ namespace Business.Abstract
     {
         IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password);
         IDataResult<User> Login(UserForLoginDto userForLoginDto);
-        IResult UserExists(string email);
+        IResult UserExists(UserForRegisterDto userForRegisterDto);
         IDataResult<AccessToken> CreateAccessToken(User user);
-
-
-        IDataResult<Admin> AdminLogin(Admin admin);
     }
 }

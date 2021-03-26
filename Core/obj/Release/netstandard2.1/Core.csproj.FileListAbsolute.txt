@@ -34,3 +34,12 @@ C:\Users\ARTI1_\Desktop\Rentacar\Core\obj\Release\netstandard2.1\Core.AssemblyIn
 C:\Users\ARTI1_\Desktop\Rentacar\Core\obj\Release\netstandard2.1\Core.csproj.CoreCompileInputs.cache
 C:\Users\ARTI1_\Desktop\Rentacar\Core\obj\Release\netstandard2.1\Core.dll
 C:\Users\ARTI1_\Desktop\Rentacar\Core\obj\Release\netstandard2.1\Core.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\bin\Release\netstandard2.1\Core.deps.json
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\bin\Release\netstandard2.1\Core.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\bin\Release\netstandard2.1\Core.pdb
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.dll
+C:\Users\mc\Desktop\Artibir\Rentacar\Core\obj\Release\netstandard2.1\Core.pdb

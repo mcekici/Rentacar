@@ -38,18 +38,23 @@ namespace API.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpPost("login/admin")]
-        public IActionResult LoginAdmin(Admin admin)
+        [HttpPost("register")]
+        public ActionResult Register(UserForRegisterDto userForRegisterDto)
         {
-            var adminToLogin = _authService.AdminLogin(admin);
-
-            if (!adminToLogin.Success)
+            var userExists = _authService.UserExists(userForRegisterDto);
+            if (!userExists.Success)
             {
-                return BadRequest(adminToLogin.Message);
+                return BadRequest(userExists.Message);
             }
 
-            return Ok(adminToLogin.Data);
+            var registerResult = _authService.Register(userForRegisterDto, userForRegisterDto.Password);
+            var result = _authService.CreateAccessToken(registerResult.Data);
+            if (result.Success)
+            {
+                return Ok(result.Data);
+            }
 
+            return BadRequest(result.Message);
         }
     }
 }

@@ -12,13 +12,11 @@ namespace Business.Concrete
     {
         private IUserService _userService;
         private ITokenHelper _tokenHelper;
-        private IAdminService _adminService;
 
-        public AuthManager(IUserService userService, ITokenHelper tokenHelper, IAdminService adminService)
+        public AuthManager(IUserService userService, ITokenHelper tokenHelper)
         {
             _userService = userService;
             _tokenHelper = tokenHelper;
-            _adminService = adminService;
         }
 
         public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
@@ -28,11 +26,12 @@ namespace Business.Concrete
             var user = new User
             {
                 Email = userForRegisterDto.Email,
+                UserName = userForRegisterDto.UserName,
                 FirstName = userForRegisterDto.FirstName,
                 LastName = userForRegisterDto.LastName,
                 PasswordHash = passwordHash,
-                PasswordSalt = passwordSalt,
-                Status = true
+                PasswordSalt = passwordSalt, 
+                IsActive = true
             };
             _userService.Add(user);
             return new SuccessDataResult<User>(user, Messages.UserRegistered);
@@ -40,7 +39,7 @@ namespace Business.Concrete
 
         public IDataResult<User> Login(UserForLoginDto userForLoginDto)
         {
-            var userToCheck = _userService.GetByMail(userForLoginDto.Email);
+            User userToCheck = _userService.GetByUserName(userForLoginDto.UserName);
             if (userToCheck == null)
             {
                 return new ErrorDataResult<User>(Messages.UserNotFound);
@@ -54,9 +53,10 @@ namespace Business.Concrete
             return new SuccessDataResult<User>(userToCheck, Messages.SuccessfulLogin);
         }
 
-        public IResult UserExists(string email)
+        public IResult UserExists(UserForRegisterDto userForRegisterDto)
         {
-            if (_userService.GetByMail(email) != null)
+            if (_userService.GetByMail(userForRegisterDto.Email) != null || 
+                _userService.GetByUserName(userForRegisterDto.UserName) != null )
             {
                 return new ErrorResult(Messages.UserAlreadyExists);
             }
@@ -70,15 +70,6 @@ namespace Business.Concrete
             return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
         }
 
-        public IDataResult<Admin> AdminLogin(Admin admin)
-        {
-            var a = _adminService.Get(admin);
-            if (a == null)
-            {
-                return new ErrorDataResult<Admin>("bulunamadı");
-            }
-
-            return new SuccessDataResult<Admin>(a);
-        }
+        
     }
 }

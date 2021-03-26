@@ -9,7 +9,8 @@ namespace DataAccess.Concrete.EntityFramework.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.;Database=Rentacar;User Id=sa;Password=1");
+            //optionsBuilder.UseSqlServer(@"Server=.;Database=Rentacar;User Id=sa;Password=1");
+            optionsBuilder.UseSqlServer(@"Server=tcp:myserver42.database.windows.net,1433;Database=Rentacar;User ID=user;Password=eng.4227;Trusted_Connection=False;Encrypt=True;");
         }
 
         public DbSet<Car> Cars { get; set; }
@@ -18,7 +19,6 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<Color> Colors { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Admin> Admins { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }
