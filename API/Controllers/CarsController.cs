@@ -1,11 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace API.Controllers
 {
@@ -36,7 +31,7 @@ namespace API.Controllers
         }
 
         [HttpGet("getdto")]
-        public IActionResult GetCarById(int carId)
+        public IActionResult GetDto(int carId)
         {
             return Ok(_carService.GetDto(carId));
         }
@@ -45,6 +40,12 @@ namespace API.Controllers
         public IActionResult Get(int carId)
         {
             return Ok(_carService.Get(carId));
+        }
+
+        [HttpGet("getdetaildto")]
+        public IActionResult GetDetailDto(int carId)
+        {
+            return Ok(_carService.GetDetailDto(carId));
         }
 
 

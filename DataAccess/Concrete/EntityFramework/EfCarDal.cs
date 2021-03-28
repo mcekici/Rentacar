@@ -10,32 +10,41 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, RentacarContext>, ICarDal
     {
-        
-
         public List<CarDto> GetAllDto()
         {
             using (RentacarContext context = new RentacarContext())
             {
-                var result = from car in context.Cars
-                             join b in context.Brands
-                             on car.BrandId equals b.Id
-                             join c in context.Colors
-                             on car.ColorId equals c.Id
-                             join cat in context.Categories
-                             on car.CategoryId equals cat.Id
-                             select new CarDto
-                             {
-                                 Id = car.Id,
-                                 Category = cat.Name,
-                                 Name = car.Name,
-                                 Brand = b.Name,
-                                 Color = c.Name,
-                                 ModelYear = car.ModelYear,
-                                 DailyPrice = car.DailyPrice,
-                                 DepositFee = car.DepositFee,
-                                 Description = car.Description
-                             };
-                return result.ToList();
+                var cars = context.Cars.ToList();
+                var dtos = new List<CarDto>();
+                foreach (var car in cars)
+                {
+                    dtos.Add(new CarDto
+                    {
+                        Id = car.Id,
+                        Plate = car.Plate,
+                        Name = car.Name,
+                        ModelYear = car.ModelYear,
+                        Class = context.CarProperties.FirstOrDefault(cp=>
+                            cp.Name.Equals("Sinifi") &&
+                            cp.CarId == car.Id
+                        ).Value,
+                        DailyPrice = car.DailyPrice,
+                        DepositFee = car.DepositFee
+                    });
+                }
+                return dtos;
+            }
+        }
+
+        public CarDetailDto GetDetailDto(int carId)
+        {
+            using (RentacarContext context = new RentacarContext()) {
+
+                return new CarDetailDto
+                {
+                    Car = GetDto(carId),
+                    Properties = context.CarProperties.Where(cp => cp.CarId == carId).ToList()
+                };
             }
         }
 
@@ -47,14 +56,15 @@ namespace DataAccess.Concrete.EntityFramework
                 return new CarDto
                 {
                     Id = car.Id,
+                    Plate = car.Plate,
                     Name = car.Name,
-                    Brand = context.Brands.Find(car.BrandId).Name,
-                    Category = context.Categories.Find(car.CategoryId).Name,
-                    Color = context.Colors.Find(car.ColorId).Name,
                     ModelYear = car.ModelYear,
+                    Class = context.CarProperties.FirstOrDefault(cp => 
+                        cp.CarId == car.Id && 
+                        cp.Name.Equals("Class")
+                    ).Value,
                     DailyPrice = car.DailyPrice,
-                    DepositFee = car.DepositFee,
-                    Description = car.Description
+                    DepositFee = car.DepositFee
                 };
             }
         }

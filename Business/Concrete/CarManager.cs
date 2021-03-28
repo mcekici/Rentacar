@@ -38,6 +38,11 @@ namespace Business.Concrete
             return new SuccessDataResult<CarDto>(_carDal.GetDto(carId));
         }
 
+        public IDataResult<CarDetailDto> GetDetailDto(int carId)
+        {
+            return new SuccessDataResult<CarDetailDto>(_carDal.GetDetailDto(carId));
+        }
+
 
         public IDataResult<Car> Get(int carId)
         {
@@ -60,23 +65,6 @@ namespace Business.Concrete
         {
             _carDal.Delete(car);
             return new SuccessResult(Messages.CarDeleted);
-        }
-
-        
-
-        public IDataResult<List<Car>> GetByUnitPrice(decimal min, decimal max)
-        {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.DailyPrice>=min && c.DailyPrice <= max).ToList());
-        }
-
-        public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
-        {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.BrandId == brandId) );
-        }
-
-        public IDataResult<List<Car>> GetCarsByColorId(int colorId)
-        {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ColorId == colorId));
         }
     }
 }
