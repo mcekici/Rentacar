@@ -23,7 +23,7 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<PropertyType> PropertyTypes  { get; set; }
         public DbSet<Rental> Rentals  { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-        public DbSet<Serial> Serials  { get; set; }
+        public DbSet<Serial> Series  { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<User> Users { get; set; }
     }

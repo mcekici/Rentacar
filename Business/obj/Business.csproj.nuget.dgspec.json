@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Business\\Business.csproj": {}
+    "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Business\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Business\\Business.csproj": {
+    "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\mc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Business\\obj\\",
+        "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\ARTI1_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\ARTI1_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +25,6 @@
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -34,11 +32,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj"
+              "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj"
               }
             }
           }
@@ -101,21 +99,20 @@
         }
       }
     },
-    "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj": {
+    "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\mc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\obj\\",
+        "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\ARTI1_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\ARTI1_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -123,7 +120,6 @@
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -195,21 +191,20 @@
         }
       }
     },
-    "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\mc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ARTI1_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\ARTI1_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -217,7 +212,6 @@
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -225,11 +219,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj"
+              "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj"
               },
-              "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj"
+              "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj"
               }
             }
           }
@@ -272,21 +266,20 @@
         }
       }
     },
-    "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj": {
+    "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\mc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\ARTI1_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Users\\ARTI1_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -294,7 +287,6 @@
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -302,8 +294,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\mc\\Desktop\\Artibir\\Rentacar\\Core\\Core.csproj"
+              "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ARTI1_\\Desktop\\29.03.2021\\Rentacar\\Core\\Core.csproj"
               }
             }
           }

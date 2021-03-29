@@ -58,3 +58,15 @@ C:\Users\mc\Desktop\Artibir\Rentacar\Entities\obj\Release\netstandard2.1\Entitie
 C:\Users\mc\Desktop\Artibir\Rentacar\Entities\obj\Release\netstandard2.1\Entities.csproj.CopyComplete
 C:\Users\mc\Desktop\Artibir\Rentacar\Entities\obj\Release\netstandard2.1\Entities.dll
 C:\Users\mc\Desktop\Artibir\Rentacar\Entities\obj\Release\netstandard2.1\Entities.pdb
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\bin\Release\netstandard2.1\Entities.deps.json
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\bin\Release\netstandard2.1\Entities.dll
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\bin\Release\netstandard2.1\Entities.pdb
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\bin\Release\netstandard2.1\Core.dll
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\bin\Release\netstandard2.1\Core.pdb
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.csprojAssemblyReference.cache
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.AssemblyInfoInputs.cache
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.AssemblyInfo.cs
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.csproj.CopyComplete
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.dll
+C:\Users\ARTI1_\Desktop\29.03.2021\Rentacar\Entities\obj\Release\netstandard2.1\Entities.pdb
